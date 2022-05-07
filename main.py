@@ -7,10 +7,10 @@ def main():
     img = cv2.imread(image_path)
 
     # Adding custom options
-    custom_config = r'--oem 3 --psm 6'
+    custom_config = r"--oem 3 --psm 6"
     output = pytesseract.image_to_string(img, config=custom_config)
     print("output: \n {}".format(output))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
