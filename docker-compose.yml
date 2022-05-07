@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  ocr-app:
+    build:
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./:/home/ubuntu/efs/
