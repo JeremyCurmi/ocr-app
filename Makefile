@@ -3,3 +3,9 @@ install:
 
 format:
 	python3.10 -m black .
+
+lint:
+	pylint --disable=R,C main.py
+
+test:
+	python -m pytest -vv --cov=tests/ tests/.
